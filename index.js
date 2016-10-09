@@ -14,6 +14,7 @@ var Draw = function(options) {
 
   var api = API(ctx);
   ctx.api = api;
+  api.ctx = ctx;
 
   var setup = Setup(ctx);
   api.addTo = setup.addTo;
